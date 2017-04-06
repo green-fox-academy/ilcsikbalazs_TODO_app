@@ -1,5 +1,7 @@
 1,alvas
 1,edzes
+1,kaja
 0,socialelet
 0,bevasarlas
+1,mosas
 0,furdes
