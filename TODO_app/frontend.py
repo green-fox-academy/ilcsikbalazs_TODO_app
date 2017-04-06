@@ -8,6 +8,13 @@ class Frontend:
             return self.print_help()
         elif sys.argv[1] == "-l":
             return self.list_tasks()
+        elif sys.argv[1] == "-a":
+            backend = Backend()
+            return backend.write_into_file(sys.argv[2])
+        elif sys.argv[1] == "-r":
+            backend = Backend()
+            remove_this = sys.argv[2]
+            return backend.remove_a_task(remove_this)
 
     def print_help(self):
         print(
@@ -29,6 +36,7 @@ class Frontend:
             elif x[0] == '1':
                 print("[x]"," - ", x[1])
     
+
 
 
 
