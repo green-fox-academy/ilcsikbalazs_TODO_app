@@ -20,12 +20,12 @@ class Backend:
         for i in open_file:
             if i[1] == string:
                 open_file.remove(i)
-
+        #create temporary txt file
         for i in open_file:
             task_write = open('temporary.txt', 'a')
             add = i[0]+ "," +i[1]
             input_write = task_write.writelines(add)
-        
+        #temporary's data copy to basic_tasks file
         task_write.close()
         task_read = open('temporary.txt', 'r')
         basic_file = open('basic_tasks.txt', 'w')

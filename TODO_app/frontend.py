@@ -29,12 +29,19 @@ class Frontend:
             "-c   Completes an task")
 
     def list_tasks(self):
+        # backend = Backend()
+        # for x in backend.open_separate():
+        #     if x[0] == '0':
+        #         print("[ ]"," - ", x[1])
+        #     elif x[0] == '1':
+        #         print("[x]"," - ", x[1])
+
         backend = Backend()
-        for x in  backend.open_separate():
-            if x[0] == '0':
-                print("[ ]"," - ", x[1])
-            elif x[0] == '1':
-                print("[x]"," - ", x[1])
+        for x in range(len(backend.open_separate())):
+            if backend.open_separate()[x][0] == '0':
+                print(x+1,"[ ]"," - ", backend.open_separate()[x][1])
+            elif backend.open_separate()[x][0] == '1':
+                print(x+1,"[x]"," - ", backend.open_separate()[x][1])
     
 
 
