@@ -1,0 +1,7 @@
+0,walk the dog
+1,go shopping
+0,do the homework
+0,wake up
+0,sleep
+1,die
+0,wake up
