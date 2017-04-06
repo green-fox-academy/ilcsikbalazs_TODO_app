@@ -18,7 +18,8 @@ class Frontend:
         elif sys.argv[1] == "-c":
             backend = Backend()
             check_this = sys.argv[2]
-            
+            backend.check_it(check_this)
+
 
     def print_help(self):
         print(

@@ -2,4 +2,4 @@
 0,socialelet
 0,bevasarlas
 1,edzes
-0,furdes
+1,furdes
