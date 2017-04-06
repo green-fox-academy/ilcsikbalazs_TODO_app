@@ -34,3 +34,9 @@ class Backend:
         temporary_delete = open('temporary.txt', 'w')
         temporary_delete.write("")
         temporary_delete.close()
+
+    def check_it(self):
+        for i in self.open_separate():
+            if i[0] == 0:
+                
+        

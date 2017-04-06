@@ -15,6 +15,10 @@ class Frontend:
             backend = Backend()
             remove_this = sys.argv[2]
             return backend.remove_a_task(remove_this)
+        elif sys.argv[1] == "-c":
+            backend = Backend()
+            check_this = sys.argv[2]
+            
 
     def print_help(self):
         print(
@@ -29,13 +33,6 @@ class Frontend:
             "-c   Completes an task")
 
     def list_tasks(self):
-        # backend = Backend()
-        # for x in backend.open_separate():
-        #     if x[0] == '0':
-        #         print("[ ]"," - ", x[1])
-        #     elif x[0] == '1':
-        #         print("[x]"," - ", x[1])
-
         backend = Backend()
         for x in range(len(backend.open_separate())):
             if backend.open_separate()[x][0] == '0':
