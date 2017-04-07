@@ -39,13 +39,17 @@ class Frontend:
 
     def list_tasks(self):
         backend = Backend()
+        print(
+            "================================\n"
+            "        Task list\n"
+            "================================")
         for x in range(len(backend.open_separate())):
             if backend.open_separate()[x][0] == '0':
                 no_enter = backend.open_separate()[x][1].replace("\n","")
-                print(x+1,"[ ]"," - ", no_enter)
+                print(x+1," [ ]"," - ", no_enter)
             elif backend.open_separate()[x][0] == '1':
                 no_enter = backend.open_separate()[x][1].replace("\n","")
-                print(x+1,"[x]"," - ", no_enter)
+                print(x+1," [x]"," - ", no_enter)
     
 
 
