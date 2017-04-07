@@ -7,7 +7,10 @@ class Frontend:
         if len(sys.argv) == 1:
             return self.print_help()
         elif sys.argv[1] == "-l":
-            return self.list_tasks()
+            if len(sys.argv) == 2:
+                return self.list_tasks()
+            elif len(sys.argv) >= 2:
+                print("You can't have an argument after -l")
         elif sys.argv[1] == "-a":
             backend = Backend()
             add_this = " ".join(sys.argv[2:])

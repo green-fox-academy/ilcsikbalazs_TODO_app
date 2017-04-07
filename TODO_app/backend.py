@@ -10,8 +10,7 @@ class Backend:
 
     def write_into_file(self,after_a):
         task_write = open('basic_tasks.txt', 'a')
-        append = "0,"+after_a+"\n"
-        input_write = task_write.writelines(append)
+        input_write = task_write.writelines("0,"+after_a+"\n")
         task_write.close()
 
     def remove_a_task(self,remove_this):
