@@ -10,16 +10,16 @@ class Frontend:
             return self.list_tasks()
         elif sys.argv[1] == "-a":
             backend = Backend()
-            return backend.write_into_file(sys.argv[2])
+            add_this = " ".join(sys.argv[2:])
+            return backend.write_into_file(add_this)
         elif sys.argv[1] == "-r":
             backend = Backend()
-            remove_this = sys.argv[2]
+            remove_this = " ".join(sys.argv[2:])
             return backend.remove_a_task(remove_this)
         elif sys.argv[1] == "-c":
             backend = Backend()
-            check_this = sys.argv[2]
+            check_this = " ".join(sys.argv[2:])
             backend.check_it(check_this)
-
 
     def print_help(self):
         print(
