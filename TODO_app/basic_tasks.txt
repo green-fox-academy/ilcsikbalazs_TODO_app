@@ -1,6 +1,6 @@
 1,Sleep
-1,Shopping
-0,Workout
+0,Shopping
+1,Workout
 1,Have a shower
 1,Clean the house
 0,Program something

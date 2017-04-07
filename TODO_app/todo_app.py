@@ -1,8 +1,8 @@
 from backend import Backend
 import sys
+from prettytable import *
 
 class Frontend:
-
     def sys_argvs(self):
         if len(sys.argv) == 1:
             return self.print_help()
@@ -35,14 +35,17 @@ class Frontend:
             "-a   Adds a new task\n"
             "-r   Removes an task\n"
             "-c   Completes an task")
+        
 
     def list_tasks(self):
         backend = Backend()
         for x in range(len(backend.open_separate())):
             if backend.open_separate()[x][0] == '0':
-                print(x+1,"[ ]"," - ", backend.open_separate()[x][1])
+                no_enter = backend.open_separate()[x][1].replace("\n","")
+                print(x+1,"[ ]"," - ", no_enter)
             elif backend.open_separate()[x][0] == '1':
-                print(x+1,"[x]"," - ", backend.open_separate()[x][1])
+                no_enter = backend.open_separate()[x][1].replace("\n","")
+                print(x+1,"[x]"," - ", no_enter)
     
 
 
