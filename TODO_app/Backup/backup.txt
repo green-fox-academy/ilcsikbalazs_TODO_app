@@ -1,16 +1,9 @@
-1,alvas
-1,edzes
-1,kaja
-0,socialelet
-0,bevasarlas
-1,mosas
-0,furdes
-
-english:
 0,Sleep
 0,Shopping
-0,Program something
-1,Workout
-1,Have a shower
-1,Clean the house
-0,Have lunch
+1,Programming something
+1,Programming more
+1,Programming even more
+0,Programming at night
+0,Workout
+0,Clean the house
+0,Have life

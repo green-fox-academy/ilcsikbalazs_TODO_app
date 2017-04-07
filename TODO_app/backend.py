@@ -61,4 +61,16 @@ class Backend:
 
 
             
-        
+    def search(self,search_this):
+        found = False
+        for i in self.open_separate():
+            compare = i[1].replace("\n", "")
+            if search_this == compare:
+                found = True
+                break
+        if found == True:
+            print("Task is found")
+        elif found == False:
+            print("Task is not found.")
+            
+            

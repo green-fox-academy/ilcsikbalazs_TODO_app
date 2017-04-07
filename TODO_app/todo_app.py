@@ -23,6 +23,10 @@ class Frontend:
             backend = Backend()
             check_this = " ".join(sys.argv[2:])
             backend.check_it(check_this)
+        elif sys.argv[1] == "-s":
+            backend = Backend()
+            search_this = " ".join(sys.argv[2:])
+            backend.search(search_this)
 
     def print_help(self):
         print(
@@ -33,15 +37,16 @@ class Frontend:
             "Command line arguments:\n"
             "-l   Lists all the tasks\n"
             "-a   Adds a new task\n"
-            "-r   Removes an task\n"
-            "-c   Completes an task")
+            "-r   Removes a task\n"
+            "-c   Completes a task"
+            "-s   Searches for a task")
         
 
     def list_tasks(self):
         backend = Backend()
         print(
             "                       \n"
-            "Todo lis:t\n"
+            "Todo list: \n"
             "=======================")
         for x in range(len(backend.open_separate())):
             if backend.open_separate()[x][0] == '0':
