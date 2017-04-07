@@ -40,9 +40,9 @@ class Frontend:
     def list_tasks(self):
         backend = Backend()
         print(
-            "================================\n"
-            "        Task list\n"
-            "================================")
+            "                       \n"
+            "Todo lis:t\n"
+            "=======================")
         for x in range(len(backend.open_separate())):
             if backend.open_separate()[x][0] == '0':
                 no_enter = backend.open_separate()[x][1].replace("\n","")

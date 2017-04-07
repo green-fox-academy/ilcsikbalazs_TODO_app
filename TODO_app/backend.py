@@ -6,7 +6,7 @@ class Backend:
         for i in input_read:
             output.append(i.split(","))
         tasks_read.close()
-        return output      
+        return output
 
     def write_into_file(self,after_a):
         task_write = open('basic_tasks.txt', 'a')

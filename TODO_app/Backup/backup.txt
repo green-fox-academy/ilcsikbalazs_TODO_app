@@ -5,3 +5,12 @@
 0,bevasarlas
 1,mosas
 0,furdes
+
+english:
+0,Sleep
+0,Shopping
+0,Program something
+1,Workout
+1,Have a shower
+1,Clean the house
+0,Have lunch
